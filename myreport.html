@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Reports - Neighborhood Watch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .report-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 24px;
+      margin-bottom: 24px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .report-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .status-badge {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+    }
+
+    h2.section-title {
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #343a40;
+    }
+    .nav-link.btn:hover {
+      background-color: white;
+      color: black !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Neighborhood Watch</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="report.html">Report an Issue</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="myreport.html">My Reports</a></li>
+          <li class="nav-item"><a class="nav-link" href="feed.html">Community Feed</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light ms-2 px-3 py-1" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Reports Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center">My Submitted Reports</h2>
+      <div id="reportsList">
+        <!-- Report Card -->
+        <div class="report-card">
+          <h5 class="fw-bold mb-2">Pothole on Elm Street</h5>
+          <p class="mb-1"><strong>Type:</strong> Pothole</p>
+          <p class="mb-1"><strong>Description:</strong> Large pothole near the intersection causing damage to vehicles.</p>
+          <p class="mb-2"><strong>Location:</strong> Elm Street & 5th Ave</p>
+          <span class="badge bg-warning status-badge">Pending</span>
+        </div>
+
+        <div class="report-card">
+          <h5 class="fw-bold mb-2">Broken Streetlight</h5>
+          <p class="mb-1"><strong>Type:</strong> Streetlight Outage</p>
+          <p class="mb-1"><strong>Description:</strong> Streetlight flickers and then turns off.</p>
+          <p class="mb-2"><strong>Location:</strong> Maple Road</p>
+          <span class="badge bg-success status-badge">Resolved</span>
+        </div>
+
+        <div class="report-card">
+          <h5 class="fw-bold mb-2">Trash Overflowing</h5>
+          <p class="mb-1"><strong>Type:</strong> Garbage</p>
+          <p class="mb-1"><strong>Description:</strong> Trash bins have not been emptied for over a week.</p>
+          <p class="mb-2"><strong>Location:</strong> 22nd Street Park</p>
+          <span class="badge bg-danger status-badge">Rejected</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Neighborhood Watch. All rights reserved.</p>
+      <small>
+        <a href="#" class="text-white text-decoration-underline">Privacy Policy</a> |
+        <a href="#" class="text-white text-decoration-underline">Terms of Service</a>
+      </small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
