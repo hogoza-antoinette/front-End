@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Feed - Neighborhood Watch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #f8f9fa;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .feed-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 24px;
+      margin-bottom: 24px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .feed-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .feed-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .feed-meta {
+      font-size: 0.85rem;
+      color: #6c757d;
+    }
+
+    h2.section-title {
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #343a40;
+    }
+    
+    .nav-link.btn:hover {
+      background-color: white;
+      color: black !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Neighborhood Watch</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="report.html">Report an Issue</a></li>
+          <li class="nav-item"><a class="nav-link" href="myreport.html">My Reports</a></li>
+          <li class="nav-item"><a class="nav-link active" href="feed.html">Community Feed</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-light ms-2" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center">Community Feed</h2>
+        <div id="feedList">
+          <!-- Feed Cards -->
+          <div class="feed-card">
+            <div class="feed-header">
+              <h5 class="mb-0 fw-bold">Pothole Filled on Elm Street</h5>
+              <span class="feed-meta">2 hours ago by John D.</span>
+            </div>
+            <p class="mb-0">The large pothole near Elm & 5th was filled today by city workers. Great response time!</p>
+          </div>
+
+          <div class="feed-card">
+            <div class="feed-header">
+              <h5 class="mb-0 fw-bold">Streetlight Fixed on Maple Road</h5>
+              <span class="feed-meta">Yesterday by Jane S.</span>
+            </div>
+            <p class="mb-0">Happy to report that the broken streetlight on Maple Road is now working perfectly.</p>
+          </div>
+
+          <div class="feed-card">
+            <div class="feed-header">
+              <h5 class="mb-0 fw-bold">Community Cleanup at 22nd Street Park</h5>
+              <span class="feed-meta">3 days ago by Carlos R.</span>
+            </div>
+            <p class="mb-0">Thanks to everyone who joined the park cleanup! Let’s keep our neighborhood beautiful!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Neighborhood Watch. All rights reserved.</p>
+      <small>
+        <a href="#" class="text-white text-decoration-underline">Privacy Policy</a> |
+        <a href="#" class="text-white text-decoration-underline">Terms of Service</a>
+      </small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
